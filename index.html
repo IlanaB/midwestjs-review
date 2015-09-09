@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>MidwestJS</h1>
+					<h3>Minneapolis, MN</h3>
+				</section>
+
+				<section>
+					<h2>Things that stood out</h2>
+					<ul>
+						<li>Frameworks</li>
+						<li>Seperation of HTML and Code Logic</li>
+						<li>Not everyone is excited about ES6</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/bathroom.jpg" alt="" style="width:400px;margin:0 auto;">
+				</section>
+
+				<section>
+					<section>
+						<h2>TDD</h2>
+						<p>(test-driven development)</p>
+					</section>
+					<section>
+						<h2>What is TDD?</h2>
+						<ol>
+							<li>Write a test that defines a new feature (or improvement)</li>
+							<li>Write the minimum amount of code to make it pass</li>
+							<li>Refactor the code</li>
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<img src="img/meme-cat.jpg" alt="">
+					</section>
+					<section>
+						<h2>Why don't we do this?</h2>
+						<img src="img/survey.jpg" alt="">
+						<a href="https://s3.amazonaws.com/dailyjs/files/2014-survey-summary.pdf">https://s3.amazonaws.com/dailyjs/files/2014-survey-summary.pdf</a>
+					</section>
+					<section>
+						<ul>
+							<li>Time and Estimation</li>
+							<li>Learning Curve</li>
+							<li>Company Culture</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>We SHOULD be writing tests</h2>
+					<ul>
+						<li>We want to stay competitive</li>
+						<li>We want to provide our clients with quality work</li>
+						<li>We have a lot of developers coming in and out of projects</li>
+						<li>We want to write better code</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/meme-fire.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>Types of Tests</h2>
+					<ul>
+						<li>Unit</li>
+						<li>Component Integration</li>
+						<li>Integration (Selenium)</li>
+						<li>Manual</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Unit Testing Frameworks</h2>
+					<ul>
+						<li>Jasmine</li>
+						<li>Mocha</li>
+						<li>Karma</li>
+						<li>QUnit</li>
+						<li>Tape</li>
+						<li>Nodeunit</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<p>Let's see some examples...</p>
+					</section>
+					<section>
+						<img src="img/angular-example.jpg" alt="">
+					</section>
+					<section>
+						<img src="img/angular-example-2.jpg" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Mocking</h2>
+						<ul>
+							<li>Spies</li>
+							<li>Stubs</li>
+							<li>Mocks</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/example-3.jpg" alt="">
+					</section>
+					<section>
+						<img src="img/example-4.jpg" alt="">
+					</section>
+					<section>
+						<img src="img/example-5.jpg" alt="">
+					</section>
+				</section>
+
+				<section>
+					<h2>Considerations for Unit Testing</h2>
+
+					<ul>
+						<li>Encourages modular coding</li>
+						<li>Tests can act as documentation</li>
+						<li>Time considerations</li>
+						<li>Cost/benefit per test</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Considerations for Integration Testing</h2>
+
+					<ul>
+						<li>Constant need for updates when UI changes</li>
+						<li>Flakiness of tests</li>
+						<li>Time to run tests</li>
+						<li>Cost/benefit per test</li>
+					</ul>
+				</section>
+
+				<section style="text-align:left;font-size: 90%;">
+					<h2>Test Driven Learning</h2>
+
+					<span class="fragment fade-in">
+					<p>Design a cash register drawer function that accepts purchase price as the first argument, payment as the second argument, and cash-in-drawer (cid) as the third argument.</p>
+
+					<p>cid is a 2d array listing available currency.</p>
+
+					<p>Return the string "Insufficient Funds" if cash-in-drawer is less than the change due. Return the string "Closed" if cash-in-drawer is equal to the change due.</p>
+
+					<p>Otherwise, return change in coin and bills, sorted in highest to lowest order.</p>
+					<br />
+					<a href="http://www.freecodecamp.com/challenges/bonfire-exact-change">Source</a>
+					</span>
+				</section>
+
+				<section>
+					<h2>Sources</h2>
+					<ul>
+						<li><a href="http://nick-tomlin.com/tdd-the-hard-parts/#/37">TDD the Hard Parts</a></li>
+						<li><a href="https://quickleft.com/blog/angularjs-unit-testing-for-real-though/">AngularJS Unit Testing For Real Though</a></li>
+						<li><a href="http://thejsguy.com/2015/01/12/jasmine-vs-mocha-chai-and-sinon.html">Jasmine vs. Mocha, Chai, and Sinon</a></li>
+						<li><a href="https://docs.angularjs.org/guide/unit-testing">AngularJS Docs - Unit Testing</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Readings</h2>
+					<ul>
+						<li>JavaScript Testing Recipes (<a href="http://jstesting.jcoglan.com/">http://jstesting.jcoglan.com/</a>)</li>
+						<li><a href="http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530">Test-Driven Development by Example</a> (Kent Beck)</li>
+						<li><a href="http://martinfowler.com/articles/is-tdd-dead/">Is TDD Dead?</a> (DHH, Kent Beck, Martin Fowler)</li>
+						<li><a href="http://shop.oreilly.com/product/0636920024699.do">Testable JavaScript</a> (Mark Ethan Trostler)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Thank you!</h2>
+					<img src="img/happy.jpg" alt="">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					// { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// { src: 'plugin/zoom-js/zoom.js', async: true },
+					// { src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
